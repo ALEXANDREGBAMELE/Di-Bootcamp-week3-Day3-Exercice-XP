@@ -16,75 +16,12 @@
     </head>
     <body>
 
-        <!-- <button id="clear" onclick="effaceur()">Clear Interval</button> -->
+        <button id="clear" onclick="Clear()">Clear Interval</button> 
         <div id="container"></div>
         
     </body>
 
-    <script>
-        //Première Partie
-
-        //Dans votre fichier Javascript, à l'aide de setTimeout, appelez une fonction après 2 secondes.
-        //La fonction alertera "Hello World".
-        function myFonction (){
-            alert("Hello World")
-        }
-        setTimeout(myFonction, 2000);
-
-        //Partie II
-
-        //Dans votre fichier Javascript, à l'aide de setTimeout, appelez une fonction après 2 secondes.
-        //La fonction ajoutera un nouveau paragraphe <p>Hello World</p>au fichier <div id="container">
-            //let p = document.querySelectorAll("#container > p");
-            let selectID = document.getElementById("container")
-            let createP = document.createElement("p")
-            let addP = selectID.appendChild(createP)
-            let text = document.createTextNode("Hello World")
-            //let append = createP.appendChild(text)
-
-            //appel de la fonction ajoutera un nouveau paragraphe
-            setTimeout( ElementP ,2000);
-
-            //creation de la fonction ajoutera un nouveau paragraphe
-            function ElementP (){ createP.appendChild(text)}
-
-        //Partie III
-
-       // Dans votre fichier Javascript, à l'aide de setInterval, appelez une fonction toutes les 2 secondes.
-       // La fonction ajoutera un nouveau paragraphe <p>Hello World</p>au fichier <div id="container">.
-        setTimeout( ElementP ,2000);
-       // L'intervalle sera effacé (c'est-à-dire clearInterval), lorsque l'utilisateur cliquera sur le bouton.
-        //Au lieu de cliquer sur le bouton, l'intervalle sera effacé (c'est-à-dire clearInterval) dès qu'il y aura 5 paragraphes à l'intérieur du <div id="container">.
-           /* let creation ;*/
-            let container = document.getElementById("container")
-            function createSetInt (){
-                //setInterval(function(){ createP.appendChild(text)},2000 )   
-            }
-           // createSetInt()
-            //select p
-            /*
-           console.log("HELLO" , container.querySelectorAll("p").length)
-
-            if(container.querySelectorAll("p").length == 5){
-                function effaceur(){
-                    console.log("HELLO" , container)
-                    console.log(container.querySelectorAll("p"))
-                    clearInterval(creation)}
-    
-                //effaceur();
-            }
-            /*function afficheHeure(){
-                setInterval(function(){
-                    let d = new Date();
-                    p1.innerHTML = d.toLocaleTimeString();
-                }, 1000)
-            }*/
-
-
-
+    <script src="exercice1.js">
         
-
-        
-
     </script>
     </html>
